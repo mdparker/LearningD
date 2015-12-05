@@ -1,0 +1,5 @@
+name "movieman"
+description "A minimal D application."
+copyright "Copyright © 2015, Mike Parker"
+authors "Mike Parker"
+targetPath "bin"

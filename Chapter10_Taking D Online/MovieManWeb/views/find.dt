@@ -1,0 +1,24 @@
+extends layout
+
+block article
+    h3 Find a Movie
+    form(action='/find', method='post')
+        table.Form
+            tr
+                td
+                    label(for='title') Movie Title
+                td
+                    input(type='text', name='title', id='title', size='64', value='N/A')
+            tr
+                td
+                    label(for='caseNumber') Case Number
+                td
+                    input(type='number', name='caseNumber', id='caseNumber', size='4', value='0')
+            tr
+                td
+                    label(for='pageNumber') Page Number
+                td
+                    input(type='number', name='pageNumber', id='pageNumber', size='4', value='0')
+            tr
+                td(colspan='2')
+                    input(type='submit', value='Find Movie(s)')

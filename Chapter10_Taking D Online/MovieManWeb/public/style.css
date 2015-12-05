@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Verdana,Geneva,sans-serif;
+    line-height: 1.25;
+    font-size: 1.15em;
+    background-color: #7887AB;
+}
+
+nav {
+    float: left;
+    padding: 2em;
+    margin-left: 5%;
+    margin-right: 2em;
+    background-color: #ECECEC;
+    height: 100%;
+    width:;
+}
+
+table.MovieList th, table.MovieList td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+table.MovieList tr:nth-child(odd) {
+    background-color: #B8D1F3;
+}
+
+table.MovieList tr:nth-child(even) {
+    background-color: #DAE5F4;
+}
+
+table.MovieList th {
+    font-weight: bold;
+}
+
+table.MovieList td.NextPrev {
+    border: none;
+}
+
+table.MovieList td.Title {
+    text-align: left;
+}
+
+table.Form td {
+    padding: 5px;
+    vertical-align: middle;
+    background-color: #DAE5F4;
+}
+
+h3 {
+    background-color: #ECECEC;
+    color: #001A66;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #001A66;
+    font-weight: 100;
+}
+
+nav a:visited {
+    color: #001A66;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table.MovieList td a {
+    color: #FF0000;
+    font-size: 0.85em;
+}

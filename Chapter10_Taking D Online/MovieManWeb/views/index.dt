@@ -1,0 +1,47 @@
+extends layout
+
+block article
+    -import mmweb.web;
+    -if(info.type == ListType.addMovie)
+        h3 Sucessfully Added Movie
+    -else if(info.type == ListType.findMovie)
+        h3 The Following Movies Were Found
+    -else
+        h3 MovieMan Database
+    -if(info.movies.length == 0 && info.type == ListType.findMovie)
+        p No movies match your search criteria.
+    -else if(info.movies.length == 0)
+        p There are no movies in the database.
+    -else
+        table.MovieList
+            tr
+                th ID
+                th Title
+                th Case
+                th Page
+                th Disc
+                th Season
+                th Action
+            -foreach(i, movie; info.movies)
+                tr
+                    td !{movie.id}
+                    td.Title !{movie.title}
+                    td !{movie.caseNumber}
+                    td !{movie.pageNumber}
+                    td !{movie.discNumber}
+                    td !{movie.seasonNumber}
+                    td
+                        a(href='/edit?movieID=!{movie.id}') Edit
+                        br
+                        a(href='/delete?movieID=!{movie.id}') Delete
+            -if(info.type == ListType.generic)
+                tr
+                    td.NextPrev
+                    td.NextPrev
+                        -if(info.movies.length >= info.limit)
+                            a(href='/?offset=!{info.offset + info.limit}') Next
+                    td.NextPrev(colspan='3')
+                    td.NextPrev
+                        -if(info.offset >= info.limit)
+                            a(href='/?offset=!{info.offset - info.limit}') Previous
+                    td.NextPrev

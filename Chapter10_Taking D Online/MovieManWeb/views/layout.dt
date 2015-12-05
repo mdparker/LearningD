@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title MovieManWeb
+        link(href='/reset.css', rel='stylesheet')
+        link(href='/style.css', rel='stylesheet')
+    body
+        nav
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a(href='/forms/add') Add New Movie
+                li
+                    a(href='/forms/find') Find Movie(s)
+        article
+            block article

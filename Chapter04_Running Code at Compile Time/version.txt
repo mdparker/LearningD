@@ -1,0 +1,7 @@
+struct AppVersion {
+    int major;
+    int minor;
+    int patch;
+}
+enum appVersion = AppVersion(1, 0, 1);
+enum appVersionString = "1.0.1";

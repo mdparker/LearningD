@@ -1,0 +1,32 @@
+extends layout
+
+block article
+    -if(isNew)
+        h3 Successfully added movie.
+    -else
+        h3 This movie already exists.
+    table.MovieList
+        tr
+            th ID
+            th Title
+            th Case Number
+            th Page Number
+            th Action
+        -if(tryReplace)
+            -auto movie = movies[$-1];
+            tr
+                td New Movie
+                td !{movie.title}
+                td !{movie.caseNumber}
+                td !{movie.pageNumber}
+                td
+                    a(href='/add?force=true;t=!{movie.title};c=!{movie.caseNumber};p=!{movie.pageNumber}') Add New Movie
+            -movies.length -= 1;
+            -foreach(movie; movies)
+                tr
+                    td !{movie.id}
+                    td !{movie.title}
+                    td !{movie.caseNumber}
+                    td !{movie.pageNumber}
+                    td
+                        a(href='/replace?force=true;t=!{movie.title};c=!{movie.caseNumber};p=!{movie.pageNumber}') Replace

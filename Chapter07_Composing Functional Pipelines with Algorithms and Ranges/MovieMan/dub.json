@@ -1,0 +1,7 @@
+{
+	"name": "movieman",
+	"description": "A personal DVD organizer.",
+	"copyright": "Copyright © 2015, Mike Parker",
+	"authors": ["Mike Parker"],
+    "targetPath": "bin",
+}

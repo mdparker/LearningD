@@ -1,0 +1,1 @@
+Compile main.d with the -cov command line switch, the execute the resulting binary. This will produce a file, main.lst, which tells you how many times each function is called and what percentage of the functions are called.

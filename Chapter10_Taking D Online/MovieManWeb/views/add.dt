@@ -1,0 +1,34 @@
+extends layout
+
+block article
+    h3 Add a New Movie
+    form(action='/add', method='post')
+        table.Form
+            tr
+                td
+                    label(for='title') Movie Title
+                td
+                    input(type='text', name='title', id='title', size='64')
+            tr
+                td
+                    label(for='caseNumber') Case Number
+                td
+                    input(type='number', name='caseNumber', id='caseNumber', size='4')
+            tr
+                td
+                    label(for='pageNumber') Page Number
+                td
+                    input(type='number', name='pageNumber', id='pageNumber', size='4')
+            tr
+                td
+                    label(for='discNumber') Disc Number
+                td
+                    input(type='number', name='discNumber', id='discNumber', size='4', value='0')
+            tr
+                td
+                    label(for='seasonNumber') Season Number
+                td
+                    input(type='number', name='seasonNumber', id='seasonNumber', size='4', value='0')
+            tr
+                td(colspan='2')
+                    input(type='submit', value='Add Movie')

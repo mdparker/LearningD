@@ -1,0 +1,7 @@
+name "moviemanweb"
+description "A web app for storing DVD information."
+copyright "Copyright © 2015, Mike Parker"
+authors "Mike Parker"
+dependency "vibe-d" version="~>0.7.24"
+dependency "d2sqlite3" version="~>0.7.3"
+versions "VibeDefaultMain"

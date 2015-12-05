@@ -1,0 +1,6 @@
+name "mywebapp"
+description "A simple vibe.d server application."
+copyright "Copyright © 2015, Mike Parker"
+authors "Mike Parker"
+dependency "vibe-d" version="~>0.7.23"
+versions "VibeDefaultMain"

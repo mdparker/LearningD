@@ -1,0 +1,5 @@
+name "colors"
+description "Print randomly colored text to stdout."
+copyright "Copyright © 2015, Mike Parker"
+authors "Mike Parker"
+dependency "colorize" version="~>1.0.5"
